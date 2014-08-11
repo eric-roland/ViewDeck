@@ -999,6 +999,11 @@ static NSTimeInterval durationToAnimate(CGFloat pointsToAnimate, CGFloat velocit
     _viewAppeared = 0;
 }
 
+- (BOOL)prefersStatusBarHidden
+{
+    return self.shouldHideStatusBar;
+}
+
 #pragma mark - Rotation IOS6
 
 - (BOOL)shouldAutorotate {
