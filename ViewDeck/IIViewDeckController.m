@@ -1004,6 +1004,14 @@ static NSTimeInterval durationToAnimate(CGFloat pointsToAnimate, CGFloat velocit
     return self.shouldHideStatusBar;
 }
 
+- (UIViewController *)childViewControllerForStatusBarHidden {
+    return self.centerController;
+}
+
+- (UIViewController *)childViewControllerForStatusBarStyle {
+    return self.centerController;
+}
+
 #pragma mark - Rotation IOS6
 
 - (BOOL)shouldAutorotate {
